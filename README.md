@@ -1,2 +1,2 @@
-# kman2140.github.io
+# cph.github.io
 website for Cyberpunk Hardware
