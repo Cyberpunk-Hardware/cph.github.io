@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+:root {
+    --width: 720px;
+    --font-main: Changa, monospace;
+    --font-secondary: 'Fira Mono','Fira Code', monospace;
+    --font-scale: 1em;
+    --background-color: #020202;
+    --heading-color: #d1fcc4;
+    --text-color: #d1fcc4;
+    --link-color: #d1fcc4;
+    --hover-color: #fcd60e;
+    --visited-color: #fcfcfc;
+/**    --code-background-color: #bc00ff;
+    --code-color: #222129;
+    --blockquote-color: #222;
+**/
+}
+
+body {
+    font-family: var(--font-secondary);
+    font-size: var(--font-scale);
+    margin: auto;
+    padding: 20px;
+    max-width: var(--width);
+    text-align: left;
+    background-color: var(--background-color);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+h1 {
+    font-family: var(--font-main);
+    color: var(--heading-color);
+  Size - 38
+Weight -Bold
+  /** Heading 1 - 
+This super huge heading is for super special occasional use or very important information.**/
+},
+h2{
+    font-family: var(--font-main);
+    color: var(--heading-color);
+  Size - 35
+Weight - light
+/** Heading 2 - 
+This is the most regular heading used for most Cyberpunk titles.**/
+  
+  },
+h3{
+    font-family: var(--font-main);
+    color: var(--heading-color);
+Size - 18
+Weight - Bold
+/** Heading 3 - 
+This is like a subtitle.  Use H3 to add a little more information below the heading but before the body copy. **/
+
+  },
+h4,
+h5,
+h6, 
+
+a {
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+a:hover {
+/** v text-decoration: underline;
+  **/
+  text-decoration: #fcd60e;
+}
+
+main {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 30px;
+    border: 1px solid var(--link-color);
+/** Body copy - 
+Use this is for all the large chunks of text with lots of information and explanation. It is a good idea to write a few lines so you can check on the line spacing to see that it is as you like it.
+Here is another line for that purpose.**/
+
+}
+
+nav a {
+    margin-right: 8px;
+/**Navigation item text - 
+This is for the text in the navigation bar at the top of the page. It will only ever be one line= **/
+}
+
+strong,
+b {
+    color: var(--heading-color);
+}
+
+button {
+    margin: 0;
+    cursor: pointer;
+/** Primary button text - 
+This is for the text inside the Buttons. It will only ever be one line.**/
+}
+
+/** main {
+    line-height: 1.6;
+}
+**/
+table {
+    width: 100%;
+}
+
+hr {
+    border: 0;
+    border-top: 1px dashed;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    padding: 25px 0;
+    text-align: center;
+    opacity: 0.6;
+/** ooter text - 
+This is for the text inside the footer that will sit at the bottom of the page.**/
+}
+
+.title:hover {
+    text-decoration: none;
+}
+
+.title h1 {
+    font-size: 1em;
+    padding: 5px 10px;
+    background: var(--heading-color);
+    color: var(--background-color);
+    display: inline-block;
+    font-weight: 400;
+}
+
+.inline {
+    width: auto !important;
+}
+
+.highlight,
+.code {
+    padding: 1px 15px;
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    overflow-x: auto;
+}
+
+.highlight {
+    border-left: 5px solid var(--heading-color);
+}
+
+/* blog post list */
+ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.blog-posts li {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+
+ul.blog-posts li time {
+    font-style: normal;
+}
+
+ul.blog-posts li span {
+    flex: 0 0 130px;
+}
+
+ul.blog-posts li a:visited {
+    color: var(--visited-color);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px dashed var(--heading-color);
+    padding: 10px;
+}
+
+@media only screen and (max-width:767px) {
+    main {
+        padding: 20px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    ul.blog-posts li {
+        flex-direction: column;
+    }
+
+    ul.blog-posts li span {
+        flex: unset;
+    }
+}
+      
