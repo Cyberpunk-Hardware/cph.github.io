@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Styled Website</title>
+  <style>
+    iframe {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <iframe id="targetFrame" src="https://example.com"></iframe>
+
+  <script>
+    const customCSS = `
+      body {
+        background-color: #111;
+        color: #0f0;
+        font-family: monospace;
+      }
+      a {
+        color: orange;
+      }
+    `;
+
+    const iframe = document.getElementById('targetFrame');
+
+    iframe.onload = function () {
+      try {
+        const style = iframe.contentDocument.createElement('style');
+        style.textContent = customCSS;
+        iframe.contentDocument.head.appendChild(style);
+      } catch (e) {
+        console.error("Couldn't inject CSS (likely due to cross-origin)", e);
+      }
+    };
+  </script>
+</body>
+</html>
